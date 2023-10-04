@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-from decouple import config
+#hide django secret key
+#from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-SECRET_KEY = config("SECRET_KEY")
+SECRET_KEY = "django-insecure-l3_0_ry#9y5xz!(+l20_7)37j5ak@3=ft*knyf8ffhcvp@#ugl"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.eba-zcuxba4v.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ["django-env.eba-ekpxhztq.us-east-1.elasticbeanstalk.com"]
 
 # Application definition
 
