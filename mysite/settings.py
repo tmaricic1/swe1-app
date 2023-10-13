@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ["swe1-app-dev2.us-west-2.elasticbeanstalk.com", "127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
-    'polls.apps.PollsConfig',
+    "polls.apps.PollsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
