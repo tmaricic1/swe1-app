@@ -25,5 +25,6 @@ deploy:
   region: "us-west-2"
   app: "swe1-app"
   env: "swe1-app-dev"
+  bucket_name: $AWS_EB_BUCKET_NAME
   on:
     branch: main
