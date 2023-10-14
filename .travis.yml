@@ -26,4 +26,4 @@ after_success:
   app: "swe1-app"
   env: "swe1-app-dev"
   on:
-    branch: main
+    branch: main 
