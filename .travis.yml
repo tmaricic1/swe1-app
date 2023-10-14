@@ -16,3 +16,14 @@ script:
 
 after_success:
   - coveralls
+
+  deploy:
+  skip_cleanup: true
+  provider: elasticbeanstalk
+  access_key_id: $AWS_EB_ACCESS_KEY
+  secret_access_key: $AWS_EB_SECRET_ACCESS_KEY
+  region: "us-west-2"
+  app: "swe1-app"
+  env: "swe1-app-dev"
+  on:
+    branch: main
