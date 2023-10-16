@@ -29,4 +29,3 @@ deploy:
   bucket_name: $AWS_EB_BUCKET_NAME
   on:
     branch: main
-#test
